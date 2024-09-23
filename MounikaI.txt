@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240923171801
+Username: CORP\1000062081
+RunAs User: CORP\1000062081
+Configuration Name: 
+Machine: EvolveVM-1-0 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 66672
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is MounikaI.log
+PS C:\Users\1000062081> New-Item -Path C:\Users\1000062081\Desktop\PlayWrightTranining -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\1000062081\Desktop\PlayWrightTranining
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/23/2024   5:20 PM                QA-Training
+
+
+PS C:\Users\1000062081> git clone https://github.com/sureshnanjan/hexaware-playwright-092024 
+Cloning into 'hexaware-playwright-092024'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 12 (delta 1), reused 8 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (12/12), 4.17 KiB | 2.08 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\1000062081> Set-Location hexaware-playwright-092024
+PS C:\Users\1000062081\hexaware-playwright-092024> git -status
+unknown option: -status
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+PS C:\Users\1000062081\hexaware-playwright-092024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\1000062081\hexaware-playwright-092024> git checkout -b MounikaI -branch\ 
+fatal: 'ranch\' is not a valid branch name
+PS C:\Users\1000062081\hexaware-playwright-092024> git checkout -b MounikaI -branch
+Switched to a new branch 'ranch'
+PS C:\Users\1000062081\hexaware-playwright-092024> git status
+On branch ranch
+nothing to commit, working tree clean
+PS C:\Users\1000062081\hexaware-playwright-092024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240923173050
+**********************
