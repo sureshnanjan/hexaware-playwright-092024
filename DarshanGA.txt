@@ -1,0 +1,59 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240923163811
+Username: CORP\1000071436
+RunAs User: CORP\1000071436
+Configuration Name: 
+Machine: EvolveVM-2 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 44864
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is DarshanGA.log
+PS C:\Users\1000071436> New-Item -Path C:\Users\1000071436\Desktop\PlaywrighTraining -Name 'MyPlaywrightTraining_withHexaware' -ItemType Directory
+
+
+    Directory: C:\Users\1000071436\Desktop\PlaywrighTraining
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/23/2024   4:42 PM                MyPlaywrightTraining_withHexaware
+
+
+PS C:\Users\1000071436> git --version
+git version 2.38.1.windows.1
+PS C:\Users\1000071436> git clone https://github.com/sureshnanjan/hexaware-playwright-092024.git
+Cloning into 'hexaware-playwright-092024'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+PS C:\Users\1000071436> Set-Location hexaware-playwright-092024
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\1000071436\hexaware-playwright-092024> git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+PS C:\Users\1000071436\hexaware-playwright-092024> git checkout -b Darshan_s-Branch
+Switched to a new branch 'Darshan_s-Branch'
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+nothing to commit, working tree clean
+PS C:\Users\1000071436\hexaware-playwright-092024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240923165457
+**********************
