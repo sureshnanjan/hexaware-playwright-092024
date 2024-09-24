@@ -1,0 +1,355 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240923171016
+Username: CORP\1000069509
+RunAs User: CORP\1000069509
+Configuration Name: 
+Machine: EvolveVM-1-0 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 124772
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is muthusamybose.log
+PS C:\Users\1000069509> new-item -path C:\Users\1000069509 -Name 'Hexaware PlayWrite' -ItemType Directory
+
+
+    Directory: C:\Users\1000069509
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/23/2024   5:14 PM                Hexaware PlayWrite
+
+
+PS C:\Users\1000069509> C:\Users\1000069509\Hexaware PlayWrite
+C:\Users\1000069509\Hexaware : The term 'C:\Users\1000069509\Hexaware' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:1
++ C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\1000069509\Hexaware:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+C:\Users\1000069509\Hexaware : The term 'C:\Users\1000069509\Hexaware' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:1
++ C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\1000069509\Hexaware:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\1000069509> cd C:\Users\1000069509\Hexaware PlayWrite
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument 'PlayWrite'."
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ cd C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ cd C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\1000069509> set location C:\Users\1000069509\Hexaware PlayWrite
+>> TerminatingError(Set-Variable): "A positional parameter cannot be found that accepts argument 'PlayWrite'."
+Set-Variable : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ set location C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Variable], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetVariableCommand
+Set-Variable : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ set location C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Variable], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetVariableCommand
+
+PS C:\Users\1000069509> set-location C:\Users\1000069509\Hexaware PlayWrite
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument 'PlayWrite'."
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ set-location C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ set-location C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\1000069509> set-location -path C:\Users\1000069509\Hexaware PlayWrite
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument 'PlayWrite'."
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ set-location -path C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ set-location -path C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\1000069509> Set-Location -Path C:\Users\1000069509\Hexaware PlayWrite
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument 'PlayWrite'."
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ Set-Location -Path C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument 'PlayWrite'.
+At line:1 char:1
++ Set-Location -Path C:\Users\1000069509\Hexaware PlayWrite
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\1000069509> Set-Location "C:\Users\1000069509\Hexaware PlayWrite"
+PS C:\Users\1000069509\Hexaware PlayWrite> dir..
+dir.. : The term 'dir..' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ dir..
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (dir..:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+dir.. : The term 'dir..' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ dir..
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (dir..:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\1000069509\Hexaware PlayWrite> -dir..
+-dir : The term '-dir' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ -dir..
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (-dir:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+-dir : The term '-dir' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ -dir..
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (-dir:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\1000069509\Hexaware PlayWrite> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https:/github.com/sureshnanjan/hexaware-playwrite-092024
+Cloning into 'hexaware-playwrite-092024'...
+ssh: Could not resolve hostname https: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https://github.com/sureshnanjan/hexaware-playwrite-092024
+Cloning into 'hexaware-playwrite-092024'...
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/sureshnanjan/hexaware-playwrite-092024/' not found
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https://github.com/sureshnanjan/hexaware-playwrite-092024
+Cloning into 'hexaware-playwrite-092024'...
+remote: Repository not found.
+fatal: repository 'https://github.com/sureshnanjan/hexaware-playwrite-092024/' not found
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https://github.com/sureshnanjan/hexaware-playwrite-092024
+Cloning into 'hexaware-playwrite-092024'...
+fatal: helper error (-@github.com': lled dialog.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sureshnanjan/hexaware-playwrite-092024/'
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https://github.com/sureshnanjan/hexaware-playwrite-092024
+Cloning into 'hexaware-playwrite-092024'...
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/sureshnanjan/hexaware-playwrite-092024/' not found
+PS C:\Users\1000069509\Hexaware PlayWrite> git --version
+git version 2.38.1.windows.1
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https://github.com/sureshnanjan/hexaware-playwrite-092024
+Cloning into 'hexaware-playwrite-092024'...
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/sureshnanjan/hexaware-playwrite-092024/' not found
+PS C:\Users\1000069509\Hexaware PlayWrite> git clone https://github.com/sureshnanjan/hexaware-playwright-092024
+Cloning into 'hexaware-playwright-092024'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 12 (delta 1), reused 8 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (12/12), 4.17 KiB | 2.08 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\1000069509\Hexaware PlayWrite> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\1000069509\Hexaware PlayWrite> git checkout -b "My First commit"-branch
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\1000069509\Hexaware PlayWrite> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\1000069509\Hexaware PlayWrite> set location "C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024"
+PS C:\Users\1000069509\Hexaware PlayWrite> set-Location "C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024"
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "My First commit"-branch
+Switched to a new branch 'ranch'
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "My First commit"
+fatal: 'My First commit' is not a valid branch name
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "My First commit"-branch
+fatal: a branch named 'ranch' already exists
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "MuthusamyBose"-branch
+fatal: a branch named 'ranch' already exists
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "MuthusamyBose" -branch
+fatal: a branch named 'ranch' already exists
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "MuthusamyBose"-branch
+fatal: a branch named 'ranch' already exists
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "MuthusamyBose"
+Switched to a new branch 'MuthusamyBose'
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch MuthusamyBose
+nothing to commit, working tree clean
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git checkout -b "MuthusamyBose"-branch
+fatal: a branch named 'ranch' already exists
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch MuthusamyBose
+nothing to commit, working tree clean
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch MuthusamyBose
+nothing to commit, working tree clean
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git commit
+On branch MuthusamyBose
+nothing to commit, working tree clean
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> stop transcript
+stop : The term 'stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ stop transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+stop : The term 'stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ stop transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> Stop Transcript
+Stop : The term 'Stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop Transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop : The term 'Stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop Transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> Move-item C:\Users\1000069509\muthusamybose.log
+Move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ Move-item C:\Users\1000069509\muthusamybose.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\1000069509\muthusamybose.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ Move-item C:\Users\1000069509\muthusamybose.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\1000069509\muthusamybose.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> Move-item "C:\Users\1000069509\muthusamybose.log"
+Move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ Move-item "C:\Users\1000069509\muthusamybose.log"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\1000069509\muthusamybose.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ Move-item "C:\Users\1000069509\muthusamybose.log"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\1000069509\muthusamybose.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch MuthusamyBose
+nothing to commit, working tree clean
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> dir
+
+
+    Directory: C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/23/2024   5:49 PM           2250 .gitignore
+-a----         9/23/2024   6:07 PM          18435 muthusamybose.txt.log
+-a----         9/23/2024   5:49 PM             73 README.md
+
+
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch MuthusamyBose
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        muthusamybose.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git add .
+
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git commit -m "My First commit to branch"
+[MuthusamyBose 7e8b8aa] My First commit to branch
+ Committer: Muthusamy Bose <1000069509@hexaware.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 305 insertions(+)
+ create mode 100644 muthusamybose.txt
+PS C:\Users\1000069509\Hexaware PlayWrite\hexaware-playwright-092024> git status
+On branch MuthusamyBose
+nothing to commit, working tree clean
