@@ -1,0 +1,169 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240924174451
+Username: CORP\1000071436
+RunAs User: CORP\1000071436
+Configuration Name: 
+Machine: EvolveVM-2 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 52972
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Day_2_MeargingSureshChangeToMainAndRunPlaywright.txt
+PS C:\Users\1000071436> set-path .\hexaware-playwright-092024\
+set-path : The term 'set-path' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ set-path .\hexaware-playwright-092024\
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (set-path:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+set-path : The term 'set-path' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ set-path .\hexaware-playwright-092024\
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (set-path:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\1000071436> set-location .\hexaware-playwright-092024\
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is up to date with 'origin/Darshan_s-Branch'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\1000071436\hexaware-playwright-092024> git add .
+
+PS C:\Users\1000071436\hexaware-playwright-092024> git commit -m "Aded few intro information in Readme.md file"
+[Darshan_s-Branch 0b38737] Aded few intro information in Readme.md file
+ 1 file changed, 13 insertions(+)
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is ahead of 'origin/Darshan_s-Branch' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\1000071436\hexaware-playwright-092024> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 576 bytes | 288.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sureshnanjan/hexaware-playwright-092024.git
+   60c7507..0b38737  Darshan_s-Branch -> Darshan_s-Branch
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is up to date with 'origin/Darshan_s-Branch'.
+
+nothing to commit, working tree clean
+PS C:\Users\1000071436\hexaware-playwright-092024> git fetch origin
+
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is up to date with 'origin/Darshan_s-Branch'.
+
+nothing to commit, working tree clean
+PS C:\Users\1000071436\hexaware-playwright-092024> git merge origin/main
+Merge made by the 'ort' strategy.
+ .github/workflows/playwright.yml     |  27 +++
+ package-lock.json                    | 104 +++++++++
+ package.json                         |  19 ++
+ playwright.config.ts                 |  79 +++++++
+ suresh_demo.txt                      |  60 +++++
+ tests-examples/demo-todo-app.spec.ts | 437 +++++++++++++++++++++++++++++++++++
+ tests/example.spec.ts                |  24 ++
+ 7 files changed, 750 insertions(+)
+ create mode 100644 .github/workflows/playwright.yml
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 playwright.config.ts
+ create mode 100644 suresh_demo.txt
+ create mode 100644 tests-examples/demo-todo-app.spec.ts
+ create mode 100644 tests/example.spec.ts
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is ahead of 'origin/Darshan_s-Branch' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\1000071436\hexaware-playwright-092024> npm install
+
+added 6 packages, and audited 7 packages in 4s
+
+found 0 vulnerabilities
+npm notice
+npm notice New minor version of npm available! 10.2.4 -> 10.8.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.3
+npm notice Run npm install -g npm@10.8.3 to update!
+npm notice
+PS C:\Users\1000071436\hexaware-playwright-092024> npx playwright install
+Downloading Chromium 129.0.6668.29 (playwright build v1134) from https://playwright.azureedge.net/builds/chromium/1134/chromium-win64.zip
+139 MiB [====================] 100% 0.0s
+Chromium 129.0.6668.29 (playwright build v1134) downloaded to C:\Users\1000071436\AppData\Local\ms-playwright\chromium-1134
+Downloading FFMPEG playwright build v1010 from https://playwright.azureedge.net/builds/ffmpeg/1010/ffmpeg-win64.zip
+1.3 MiB [====================] 100% 0.0s
+FFMPEG playwright build v1010 downloaded to C:\Users\1000071436\AppData\Local\ms-playwright\ffmpeg-1010
+Downloading Firefox 130.0 (playwright build v1463) from https://playwright.azureedge.net/builds/firefox/1463/firefox-win64.zip
+84.6 MiB [====================] 100% 0.0s
+Firefox 130.0 (playwright build v1463) downloaded to C:\Users\1000071436\AppData\Local\ms-playwright\firefox-1463
+Downloading Webkit 18.0 (playwright build v2070) from https://playwright.azureedge.net/builds/webkit/2070/webkit-win64.zip
+46.3 MiB [====================] 100% 0.0s
+Webkit 18.0 (playwright build v2070) downloaded to C:\Users\1000071436\AppData\Local\ms-playwright\webkit-2070
+PS C:\Users\1000071436\hexaware-playwright-092024> npx playwright test --headed true
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+
+To open last HTML report run:
+
+  npx playwright show-report
+PS C:\Users\1000071436\hexaware-playwright-092024> npx playwright test
+
+Running 6 tests using 6 workers
+  6 passed (8.6s)
+
+To open last HTML report run:
+
+  npx playwright show-report
+PS C:\Users\1000071436\hexaware-playwright-092024> npx playwright show-report
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
+^C^CTerminate batch job (Y/N)? y
+PS C:\Users\1000071436\hexaware-playwright-092024> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\1000071436\hexaware-playwright-092024> npx playwright test --project==chromium
+Error: Project(s) "=chromium" not found. Available projects: "chromium", "firefox", "webkit"
+Error: Project(s) "=chromium" not found. Available projects: "chromium", "firefox", "webkit"
+    at filterProjects (C:\Users\1000071436\hexaware-playwright-092024\node_modules\playwright\lib\runner\projectUtils.js:67:11)
+    at writeLastRunInfo (C:\Users\1000071436\hexaware-playwright-092024\node_modules\playwright\lib\runner\runner.js:150:54)
+    at Runner.runAllTests (C:\Users\1000071436\hexaware-playwright-092024\node_modules\playwright\lib\runner\runner.js:81:26)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTests (C:\Users\1000071436\hexaware-playwright-092024\node_modules\playwright\lib\program.js:218:18)
+    at t.<anonymous> (C:\Users\1000071436\hexaware-playwright-092024\node_modules\playwright\lib\program.js:55:7)
+PS C:\Users\1000071436\hexaware-playwright-092024> npx playwright test --project=chromium
+
+Running 2 tests using 2 workers
+  2 passed (8.0s)
+
+To open last HTML report run:
+
+  npx playwright show-report
+PS C:\Users\1000071436\hexaware-playwright-092024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240924182822
+**********************
