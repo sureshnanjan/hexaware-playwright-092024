@@ -1,0 +1,87 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240925201812
+Username: CORP\2000085355
+RunAs User: CORP\2000085355
+Configuration Name: 
+Machine: EvolveVM-1-0 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 81784
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is SJaveed_Demo.log
+PS C:\Users\2000085355> git checkout -b SyedJaveed
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\2000085355> git Status
+fatal: cannot handle Status as a builtin
+PS C:\Users\2000085355> git Checkout -b SyedJaveed
+fatal: cannot handle Checkout as a builtin
+PS C:\Users\2000085355> git Checkout -b SyedJaveed
+fatal: cannot handle Checkout as a builtin
+PS C:\Users\2000085355> git --version 
+git version 2.38.1.windows.1
+PS C:\Users\2000085355> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\2000085355> git checkout -b SyedJaveed
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\2000085355> Set-Location hexaware-playwright-092024
+PS C:\Users\2000085355\hexaware-playwright-092024> git status
+On branch SyedJaveed21
+Your branch is up to date with 'origin/SyedJaveed21'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Jav.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Jav.txt
+PS C:\Users\2000085355\hexaware-playwright-092024> git status
+On branch SyedJaveed21
+Your branch is up to date with 'origin/SyedJaveed21'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Jav.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Jav.txt
+PS C:\Users\2000085355\hexaware-playwright-092024> git checkout -b SyedJav10
+Switched to a new branch 'SyedJav10'
+PS C:\Users\2000085355\hexaware-playwright-092024> git status
+On branch SyedJav10
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Jav.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Jav.txt
+PS C:\Users\2000085355\hexaware-playwright-092024> ls
+
+
+    Directory: C:\Users\2000085355\hexaware-playwright-092024
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/23/2024   7:11 PM           2250 .gitignore
+-a----         9/23/2024   7:11 PM             73 README.md
+
+
+PS C:\Users\2000085355\hexaware-playwright-092024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240925202705
+**********************
