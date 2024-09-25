@@ -1,18 +1,22 @@
 import { test, expect } from '@playwright/test';
+test('Heroku Page has correct Title', async ({ page }) => {
+  // Open the browser and navigate to Heroku App homepage
+  await page.goto('https://the-internet.herokuapp.com/');
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
+  // Read the title and check if it matched "The Internet"
+  
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/The Internet/);
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test("Heroku HomePage Heading is correct", async ({page})=>{
+  // Open the Heroku App Home Page
+  await page.goto('https://the-internet.herokuapp.com/');
+  // read the heading
+  const expectedHeading = "Welcome to the-internet"
+  const actualHeading = await page.getByRole('heading', { name: 'Welcome to the-internet' }).textContent()
+  // check whther the heading matched 
+  await expect(actualHeading).toEqual(expectedHeading)
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+})
 
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-});

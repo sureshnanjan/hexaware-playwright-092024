@@ -1,17 +1,19 @@
 {
   "name": "hexaware-playwright-092024",
   "version": "1.0.0",
-  "description": "AjitTraining",
+  "description": "Automation Training Project",
   "main": "index.js",
   "scripts": {},
-  "author": "Ajitkumar",
+  "keywords": [
+    "playwright"
+  ],
+  "author": "Suresh Nanjan",
   "license": "ISC",
-  "dependencies": {
-    "playwright": "^1.47.2",
-    "typescript": "^5.6.2"
-  },
   "devDependencies": {
     "@playwright/test": "^1.47.2",
     "@types/node": "^22.6.1"
+  },
+  "dependencies": {
+    "hexaware-playwright-092024": "file:"
   }
 }
