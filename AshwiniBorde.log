@@ -1,0 +1,50 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240923171740
+Username: CORP\1000070852
+RunAs User: CORP\1000070852
+Configuration Name: 
+Machine: EvolveVM-2 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 25456
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is AshwiniBorde.log
+PS C:\Users\1000070852> New-Item C:\Users\1000070852\Desktop\AB 'QA Training'
+PS C:\Users\1000070852> TerminatingError(New-Item): "A positional parameter cannot be found that accepts argument 'QA Training'."
+New-Item : A positional parameter cannot be found that accepts argument 'QA Training'.
+At line:1 char:1
++ New-Item C:\Users\1000070852\Desktop\AB 'QA Training'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : A positional parameter cannot be found that accepts argument 'QA Training'.
+At line:1 char:1
++ New-Item C:\Users\1000070852\Desktop\AB 'QA Training'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\1000070852> New-Item C:\Users\1000070852\Desktop\AB -Name  'QA Training'
+
+
+    Directory: C:\Users\1000070852\Desktop\AB
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/23/2024   5:28 PM              0 QA Training
+
+
+PS C:\Users\1000070852> git clone https://github.com/BordeAshwini/hexaware-playwright-092024
+Cloning into 'hexaware-playwright-092024'...
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/BordeAshwini/hexaware-playwright-092024/' not found
