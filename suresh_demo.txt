@@ -1,0 +1,60 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240923165014
+Username: SURESHNANJAN\nanja
+RunAs User: SURESHNANJAN\nanja
+Configuration Name: 
+Machine: SURESHNANJAN (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19276
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is suresh_demo.log
+PS C:\Users\nanja> New-Item -Path C:\Trainings-2021\Vendors\IIHT\hexaware-092024 -Name QA-Training
+
+
+    Directory: C:\Trainings-2021\Vendors\IIHT\hexaware-092024
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        23-09-2024     16:51              0 QA-Training
+
+
+PS C:\Users\nanja> New-Item -Path C:\Trainings-2021\Vendors\IIHT\hexaware-092024 -Name QA-Training -ItemType Directory
+
+
+    Directory: C:\Trainings-2021\Vendors\IIHT\hexaware-092024
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        23-09-2024     16:51                QA-Training
+
+
+PS C:\Users\nanja> git --version 
+
+PS C:\Users\nanja> Set-Location C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training> git clone https://github.com/sureshnanjan/hexaware-playwright-092024
+
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training> sl .\hexaware-playwright-092024\
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training\hexaware-playwright-092024> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training\hexaware-playwright-092024> git checkout -b suresh-trainer
+
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training\hexaware-playwright-092024> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\hexaware-092024\QA-Training\hexaware-playwright-092024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240923165601
+**********************
