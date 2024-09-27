@@ -1,0 +1,133 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240927132145
+Username: CORP\1000062081
+RunAs User: CORP\1000062081
+Configuration Name: 
+Machine: EvolveVM-1-1 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9344
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\1000062081\Documents\PowerShell_transcript.EvolveVM-1-1.Ynd7rZf_.20240927132145.txt
+PS C:\Users\1000062081> set-location .\hexaware-playwright-092024\
+PS C:\Users\1000062081\hexaware-playwright-092024> git branch -a 
+  main
+* ranch
+  remotes/origin/Darshan_s-Branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/suresh-trainer
+PS C:\Users\1000062081\hexaware-playwright-092024> git branch --show-current
+ranch
+PS C:\Users\1000062081\hexaware-playwright-092024> git branch -m Mounika-I 
+
+PS C:\Users\1000062081\hexaware-playwright-092024> git branch --show-current
+Mounika-I
+PS C:\Users\1000062081\hexaware-playwright-092024> git branch -a
+* Mounika-I
+  main
+  remotes/origin/Darshan_s-Branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/suresh-trainer
+PS C:\Users\1000062081\hexaware-playwright-092024> git fetch
+remote: Enumerating objects: 58, done.
+remote: Counting objects: 100% (56/56), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 52 (delta 11), reused 46 (delta 8), pack-reused 0 (from 0)
+Unpacking objects: 100% (52/52), 21.74 KiB | 47.00 KiB/s, done.
+From https://github.com/sureshnanjan/hexaware-playwright-092024
+ * [new branch]      Ashwini_B            -> origin/Ashwini_B
+   60c7507..a02b261  Darshan_s-Branch     -> origin/Darshan_s-Branch
+ * [new branch]      Jayalakshmi_P-branch -> origin/Jayalakshmi_P-branch
+ * [new branch]      Karthikeyank         -> origin/Karthikeyank
+ * [new branch]      Muthusamy_PW         -> origin/Muthusamy_PW
+ * [new branch]      SyedJav10            -> origin/SyedJav10
+ * [new branch]      ajitkumar            -> origin/ajitkumar
+ * [new branch]      jayaganapathie       -> origin/jayaganapathie
+   d6bb89f..6ee3ed8  main                 -> origin/main
+ * [new branch]      padma-branch         -> origin/padma-branch
+   9da628b..ee35e8a  suresh-trainer       -> origin/suresh-trainer
+PS C:\Users\1000062081\hexaware-playwright-092024> git status
+On branch Mounika-I
+nothing to commit, working tree clean
+PS C:\Users\1000062081\hexaware-playwright-092024> git push 
+fatal: The current branch Mounika-I has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Mounika-I
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+PS C:\Users\1000062081\hexaware-playwright-092024> git push --set-upstream origin Mounika-I
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.37 KiB | 703.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Mounika-I' on GitHub by visiting:
+remote:      https://github.com/sureshnanjan/hexaware-playwright-092024/pull/new/Mounika-I
+remote:
+To https://github.com/sureshnanjan/hexaware-playwright-092024
+ * [new branch]      Mounika-I -> Mounika-I
+branch 'Mounika-I' set up to track 'origin/Mounika-I'.
+PS C:\Users\1000062081\hexaware-playwright-092024> git merge origin/main
+Merge made by the 'ort' strategy.
+ .github/workflows/playwright.yml     |  27 +++
+ package-lock.json                    | 104 +++++++++
+ package.json                         |  19 ++
+ playwright.config.ts                 |  79 +++++++
+ suresh_demo.txt                      |  60 +++++
+ tests-examples/demo-todo-app.spec.ts | 437 +++++++++++++++++++++++++++++++++++
+ tests/example.spec.ts                |  24 ++
+ 7 files changed, 750 insertions(+)
+ create mode 100644 .github/workflows/playwright.yml
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 playwright.config.ts
+ create mode 100644 suresh_demo.txt
+ create mode 100644 tests-examples/demo-todo-app.spec.ts
+ create mode 100644 tests/example.spec.ts
+PS C:\Users\1000062081\hexaware-playwright-092024> git status
+On branch Mounika-I
+Your branch is ahead of 'origin/Mounika-I' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\1000062081\hexaware-playwright-092024> npm install
+npm notice To update run: npm install -g npm@10.8.3
+npm notice
+PS C:\Users\1000062081\hexaware-playwright-092024> npx playwright install
+hromium-win64.zip
+139 MiB [====================] 100% 0.0s
+Chromium 129.0.6668.29 (playwright build v1134) downloaded to C:\Users\1000062081\AppData\Local\ms-playwright\chromium-1
+134
+Downloading FFMPEG playwright build v1010 from https://playwright.azureedge.net/builds/ffmpeg/1010/ffmpeg-win64.zip
+1.3 MiB [====================] 100% 0.0s
+FFMPEG playwright build v1010 downloaded to C:\Users\1000062081\AppData\Local\ms-playwright\ffmpeg-1010
+Downloading Firefox 130.0 (playwright build v1463) from https://playwright.azureedge.net/builds/firefox/1463/firefox-win
+64.zip
+84.6 MiB [====================] 100% 0.0s
+Firefox 130.0 (playwright build v1463) downloaded to C:\Users\1000062081\AppData\Local\ms-playwright\firefox-1463
+Downloading Webkit 18.0 (playwright build v2070) from https://playwright.azureedge.net/builds/webkit/2070/webkit-win64.z
+ip
+46.3 MiB [====================] 100% 0.0s
+PS C:\Users\1000062081\hexaware-playwright-092024> npx playwright test
+Running 6 tests using 6 workers
+  6 passed (7.8s)
+PS C:\Users\1000062081\hexaware-playwright-092024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240927135634
+**********************
