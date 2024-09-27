@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Heroku Page has correct Title', async ({ page }) => {
   // Open the browser and navigate to Heroku App homepage
-  await page.goto('https://the-internet.herokuapp.com/');
+  await page.goto('/');
 
   // Read the title and check if it matched "The Internet"
   
@@ -12,7 +12,7 @@ test('Heroku Page has correct Title', async ({ page }) => {
 
 test("Heroku HomePage Heading is correct", async ({page})=>{
   // Open the Heroku App Home Page
-  await page.goto('https://the-internet.herokuapp.com/');
+  await page.goto('/');
   // read the heading
   const expectedHeading = "Welcome to the-internet"
   const actualHeading = await page.getByRole('heading', { name: 'Welcome to the-internet' }).textContent()
