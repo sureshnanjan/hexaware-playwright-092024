@@ -1,0 +1,108 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240927190719
+Username: CORP\1000071436
+RunAs User: CORP\1000071436
+Configuration Name: 
+Machine: EvolveVM-1-0 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16436
+PSVersion: 5.1.19041.4522
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4522
+BuildVersion: 10.0.19041.4522
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Day4_PullingSureshBranchSetup_intoMyBranch.txt
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is up to date with 'origin/Darshan_s-Branch'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day4_PullingSureshBranchSetup_intoMyBranch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\1000071436\hexaware-playwright-092024> git log 2
+fatal: ambiguous argument '2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS C:\Users\1000071436\hexaware-playwright-092024> git log -2
+commit 495bf229855f9e517578bc6d66b424fcc2c86041 (HEAD -> Darshan_s-Branch, origin/Darshan_s-Branch)
+Author: Darshan G A <DarshanG@hexaware.com>
+Date:   Fri Sep 27 19:05:26 2024 +0530
+
+    Did minor updated to playwright config file, added Headless: false and default browser: Chromium to run, in the same
+ file.
+
+commit a02b261cbbc8b3e7a24d2fe640dffcf90dd1e91a
+Author: Darshan G A <DarshanG@hexaware.com>
+Date:   Tue Sep 24 18:42:19 2024 +0530
+
+    Pulled, merged the latest main changes which includes basic Playwright project setup. Added its corresponding transc
+ript file as well
+PS C:\Users\1000071436\hexaware-playwright-092024> git push
+Everything up-to-date
+PS C:\Users\1000071436\hexaware-playwright-092024> git fetch
+
+PS C:\Users\1000071436\hexaware-playwright-092024> git branch --show-current
+Darshan_s-Branch
+PS C:\Users\1000071436\hexaware-playwright-092024> git branch -a
+* Darshan_s-Branch
+  main
+  remotes/origin/Ashwini_B
+  remotes/origin/Darshan_s-Branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Jayalakshmi_P-branch
+  remotes/origin/Karthikeyank
+  remotes/origin/Mounika-I
+  remotes/origin/Muthusamy_PW
+  remotes/origin/SyedJav10
+  remotes/origin/SyedJaveed
+  remotes/origin/ajitkumar
+  remotes/origin/jayaganapathie
+  remotes/origin/main
+  remotes/origin/padma-branch
+  remotes/origin/suresh-trainer
+PS C:\Users\1000071436\hexaware-playwright-092024> git merge suresh-trainer
+merge: suresh-trainer - not something we can merge
+
+Did you mean this?
+        origin/suresh-trainer
+PS C:\Users\1000071436\hexaware-playwright-092024> git merge origin/suresh-trainer
+Auto-merging tests/example.spec.ts
+Merge made by the 'ort' strategy.
+ heroku-operations/abtesting_operations.ts |  3 +++
+ heroku-operations/addremove_operations.ts |  7 +++++++
+ heroku-operations/home_page_operations.ts |  7 +++++++
+ heroku-playwright/add-remove.ts           | 16 +++++++++++++++
+ heroku-playwright/homepage.ts             | 18 +++++++++++++++++
+ heroku-wdio/homepage.ts                   | 13 ++++++++++++
+ tests/example.spec.ts                     | 33 +++++++++++++++++++++++++++++++
+ tests/herokuapp.spec.ts                   | 32 ++++++++++++++++++++++++++++++
+ 8 files changed, 129 insertions(+)
+ create mode 100644 heroku-operations/abtesting_operations.ts
+ create mode 100644 heroku-operations/addremove_operations.ts
+ create mode 100644 heroku-operations/home_page_operations.ts
+ create mode 100644 heroku-playwright/add-remove.ts
+ create mode 100644 heroku-playwright/homepage.ts
+ create mode 100644 heroku-wdio/homepage.ts
+ create mode 100644 tests/herokuapp.spec.ts
+PS C:\Users\1000071436\hexaware-playwright-092024> git status
+On branch Darshan_s-Branch
+Your branch is ahead of 'origin/Darshan_s-Branch' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day4_PullingSureshBranchSetup_intoMyBranch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\1000071436\hexaware-playwright-092024> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240927192011
+**********************
