@@ -13,3 +13,12 @@ Start-Transcript -> command to start the transcript processes, this will record 
 The web application that we use: https://the-internet.herokuapp.com/
 Playwright documentation site: https://playwright.dev/docs/intro
 Github repo link :https://github.com/sureshnanjan/hexaware-playwright-092024
+
+# General Info:
+Contrubutor : Darshan GA - DarshanG@hexaware.com
+Working Branch: Darshan_s-branch
+Naming convention Used: 
+    Classes : PascalCase
+    Variables : camelCase
+    Interfaces : I+PascalCase
+    Method Names : camelCase
