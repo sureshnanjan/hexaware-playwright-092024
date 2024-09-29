@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { HomePageOperations } from '../heroku-operations/home_page_operations';
+import { HomePagePW } from '../heroku-playwright/homepage';
 
 test('Heroku Page has correct Title', async ({ page }) => {
   // Open the browser and navigate to Heroku App homepage
@@ -23,7 +23,8 @@ test("Heroku HomePage Heading is correct", async ({page})=>{
 })
 
 test("With Abstraction", () =>{
-    const home = new HomePageOperations()
+  const home = new HomePagePW();
+    //const home = new HomePageOperations()
     const expectedHeading = "Welcome to the-internet"
     const actualHeading = home.getTitle();
     expect(actualHeading).toEqual(expectedHeading)
@@ -38,13 +39,13 @@ test("Petstore Logo", () =>{
   // Size
   // Logo Picture
   // Broser // GC, FF, EDGE, Sagfary
-  const home = new HomePageOperations()
+  const home = new HomePagePW()
   // Assert logo is on left
   const expectedPos = "left"
   const expectedcol = "blue"
   const expectedsize = 12
   const expectedPic = "jpeg"
-  const actualLpgo = home.getLogoDetails()
+  const actualLpgo = home.getTitle();
   // Fontsize is 12 
   // GWT
   // AAA

@@ -3,11 +3,8 @@ import { test, expect } from '@playwright/test';
 export class HomePagePW implements HomePageOperations{
     // Locators
     getTitle(): string {
-        await page.goto('https://the-internet.herokuapp.com/');
-        // read the heading
-        //const expectedHeading = "Welcome to the-internet"
-        const actualHeading = await page.getByRole('heading', { name: 'Welcome to the-internet' }).textContent()
-        return actualHeading;
+       
+        throw new Error("Method not implemented.");
     }
     getSubTitle(): string {
         throw new Error("Method not implemented.");

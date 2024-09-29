@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { HomePageOperations } from '../heroku-operations/home_page_operations';
 import { HomePagePW } from '../heroku-playwright/homepage';
+import { AddRemoveElements } from '../heroku-playwright/add-remove';
 import { equal } from 'assert';
 import { AddRemoveOperations } from '../heroku-operations/addremove_operations';
 test("Heroku Title is OK", async () =>{
@@ -14,7 +15,7 @@ test("Heroku Subtitle is OK", async () =>{});
 test("Heroku Available Examples is OK", async () =>{});
 
 test("Adding 1 element works", async () =>{
-    const adrPage:AddRemoveOperations
+    const adrPage:AddRemoveOperations =new AddRemoveElements()
     const expectedResult = 1
     adrPage.addElement();
     const actualResult = adrPage.getAddedElements();
@@ -22,7 +23,7 @@ test("Adding 1 element works", async () =>{
 });
 
 test("Adding 10 elements works", async () =>{
-    const adrPage:AddRemoveOperations
+    const adrPage:AddRemoveOperations=new AddRemoveElements()
     const expectedResult = 10
     adrPage.addElement();
     adrPage.addElement();
